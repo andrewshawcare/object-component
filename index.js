@@ -1,15 +1,14 @@
 /*global define, document */
-define([], function () {
+define([
+  "./node_modules/primitive-component/index"
+], function (
+  PrimitiveComponent
+) {
   "use strict";
   return function (data) {
     var data = data || {};
     var object = data.object || {};
-    var ValueComponent = data.ValueComponent || function (data) {
-      var value = data.value || "";
-      var valueElement = document.createElement("span");
-      valueElement.textContent = value;
-      return valueElement;
-    };
+    var ValueComponent = data.ValueComponent || PrimitiveComponent;
 
     var objectElement = document.createElement("dl");
     objectElement.classList.add("object");

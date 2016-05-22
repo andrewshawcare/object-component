@@ -15,7 +15,9 @@
   "license": "MIT",
   "author": "Andrew Shaw Care <andrewshawcare@gmail.com> (https://github.com/andrewshawcare)",
   "repository": "andrewshawcare/object-component",
-  "dependencies": {},
+  "dependencies": {
+    "primitive-component": "andrewshawcare/primitive-component"
+  },
   "devDependencies": {
     "jasmine": "^2.4.1",
     "jsdom": "^8.2.0",
