@@ -4,9 +4,10 @@ define([], function () {
   return function (data) {
     var data = data || {};
     var object = data.object || {};
-    var valueComponent = data.valueComponent || function (value) {
+    var ValueComponent = data.ValueComponent || function (data) {
+      var value = data.value || "";
       var valueElement = document.createElement("span");
-      valueElement.innerText = value;
+      valueElement.textContent = value;
       return valueElement;
     };
 
@@ -15,13 +16,13 @@ define([], function () {
 
     Object.keys(object).forEach(function (key) {
       var termElement = document.createElement("dt");
-      termElement.classList.add("term");
-      termElement.innerText = key;
+      termElement.classList.add("key");
+      termElement.textContent = key;
       objectElement.appendChild(termElement);
 
       var descriptionElement = document.createElement("dd");
-      descriptionElement.classList.add("description");
-      descriptionElement.appendChild(valueComponent(object[key]));
+      descriptionElement.classList.add("value");
+      descriptionElement.appendChild(ValueComponent({value: object[key]}));
       objectElement.appendChild(descriptionElement);
     });
 
