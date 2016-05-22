@@ -15,14 +15,15 @@
   "license": "MIT",
   "author": "Andrew Shaw Care <andrewshawcare@gmail.com> (https://github.com/andrewshawcare)",
   "repository": "andrewshawcare/object-component",
-  "dependencies": {
-    "serve-static": "^1.10.2",
-    "finalhandler": "^0.4.1",
-    "example-component": "^0.0.1",
-    "get-json": "andrewshawcare/get-json#18cf1b4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "jasmine": "^2.4.1",
-    "jsdom": "^8.2.0"
+    "jsdom": "^8.2.0",
+    "amdefine": "^1.0.0"
+  },
+  "component": {
+    "data": {
+      "object": {"foo": "bar"}
+    }
   }
 }

@@ -1,8 +1,11 @@
 version: "2"
 services:
-  object-component:
-    build: .
+  workshop:
+    image: andrewshawcare/component-workshop
+    environment:
+      - COMPONENT_PATH=./object-component
     ports:
-      - '80'
+      - '80:80'
+      - '35729:35729'
     volumes:
-      - ./:/usr/src/app
+      - ./:/usr/src/app/object-component
