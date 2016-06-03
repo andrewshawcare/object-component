@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/jasmine"
+    "test": "JASMINE_CONFIG_PATH=jasmine.json ./node_modules/.bin/jasmine"
   },
   "description": "Renders a JavaScript object as an HTML definition list.",
   "keywords": ["object", "component", "html", "view"],
