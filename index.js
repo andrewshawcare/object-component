@@ -1,6 +1,6 @@
 /*global define, document */
 define([
-  "./node_modules/primitive-component/index"
+  "node_modules/primitive-component/index"
 ], function (
   PrimitiveComponent
 ) {
