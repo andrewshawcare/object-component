@@ -24,6 +24,7 @@
     "jsdom": "^8.2.0"
   },
   "component": {
+    "dependencies": ["primitive-component"],
     "data": {
       "object": {"foo": "bar"}
     }
